@@ -28,6 +28,8 @@ const Login = ({ setPage }: Props) => {
             borderRadius={20}
             paddingBlock={5}
             paddingInline={5}
+            borderColor="#50C878"
+            borderWidth={5}
           >
             <Heading>Welcome</Heading>
             <Input
@@ -60,7 +62,7 @@ const Login = ({ setPage }: Props) => {
                 width={"98%"}
                 backgroundColor={"white"}
                 textColor={"black"}
-                onClick={() => setPage(1)}
+                onClick={() => setPage(3)}
               >
                 LogIn
               </Button>

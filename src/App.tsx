@@ -1,4 +1,4 @@
-import { Box, Button, Center, Heading } from "@chakra-ui/react";
+import { Box, Button, Center, Heading, useColorMode } from "@chakra-ui/react";
 import React, { useState } from "react";
 import Login from "./pages/Login";
 import Onboarding from "./pages/Onboarding";
@@ -7,6 +7,10 @@ import Dashboard from "./pages/Dashboard";
 import Withdraw from "./pages/Withdraw";
 
 const App = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+  if (localStorage.getItem("chakra-ui-color-mode") === "light")
+    toggleColorMode();
+
   const [pageNumber, setPageNumber] = useState(0);
   const [funds, setFunds] = useState(0);
 
@@ -45,6 +49,8 @@ const App = () => {
         height={852}
         width={393}
         borderRadius={20}
+        borderColor="#50C878"
+        borderWidth={2}
       >
         <Box backgroundColor={"#3D52D5"} height={136} borderTopRadius={20}>
           <Center>

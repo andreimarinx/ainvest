@@ -33,6 +33,8 @@ const Withdraw = ({ setPage, funds, setFunds }: Props) => {
       borderRadius={20}
       paddingBlock={5}
       paddingInline={5}
+      borderColor="#50C878"
+      borderWidth={5}
     >
       <Heading fontSize={30}>Withdraw</Heading>
       <Heading fontSize={25} marginTop={10} marginBottom={3}>

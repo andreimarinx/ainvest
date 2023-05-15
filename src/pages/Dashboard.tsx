@@ -23,6 +23,8 @@ const Dashboard = ({ setPage, funds }: Props) => {
       borderRadius={20}
       paddingBlock={5}
       paddingInline={5}
+      borderColor="#50C878"
+      borderWidth={5}
     >
       <Heading>Welcome!</Heading>
       <SimpleGrid columns={2} marginTop={10} alignItems={"baseline"}>
@@ -52,7 +54,7 @@ const Dashboard = ({ setPage, funds }: Props) => {
           _hover={{ backgroundColor: "#98FB98" }}
           onClick={() => setPage(2)}
         >
-          Depozit
+          Deposit
         </Button>
         <Button
           width={"98%"}

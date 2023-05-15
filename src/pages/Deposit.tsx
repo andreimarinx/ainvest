@@ -35,14 +35,16 @@ const Deposit = ({ setPage, setFunds, funds }: Props) => {
       borderRadius={20}
       paddingBlock={5}
       paddingInline={5}
+      borderColor="#50C878"
+      borderWidth={5}
     >
-      <Heading fontSize={30}>Depozit</Heading>
+      <Heading fontSize={30}>Deposit</Heading>
       <SimpleGrid columns={2} marginTop={5} alignItems={"baseline"}>
         <Box backgroundColor={"#23145F"} padding={2} borderRadius={20}>
           <Heading>${sliderValue}</Heading>
         </Box>
         <Heading fontSize={18} marginLeft={2}>
-          One time depozit
+          One time deposit
         </Heading>
       </SimpleGrid>
       <Box pt={6} pb={2}>
@@ -62,7 +64,7 @@ const Deposit = ({ setPage, setFunds, funds }: Props) => {
         </Slider>
       </Box>
       <Heading fontSize={30} marginTop={5}>
-        Recurring depozit
+        Recurring deposit
       </Heading>
       <SimpleGrid columns={2} marginTop={5} alignItems={"baseline"}>
         <Box backgroundColor={"#23145F"} padding={2} borderRadius={20}>
